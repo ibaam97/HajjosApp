@@ -1,0 +1,146 @@
+@keyframes header-animate {
+    0% {
+        background-image: url("../img/Materials/Material 1.jpg");
+        background-position-y: 5%;
+        // background-size: auto;
+        color: rgb(125, 190, 3);
+    }
+    5% {
+        background-image: url("../img/Materials/Material 2.jpg");
+        // background-position: center;
+        // background-size: cover;
+        background-position-y: 50%;
+        // color: rgb(25, 27, 56);
+        color: rgb(85, 94, 202);
+    }
+    25%{
+        background-image: url("../img/Materials/Material 2.jpg");
+        background-position-y: 50%;
+        color: rgb(85, 94, 202);
+    }
+    30% {
+        background-image: url("../img/Materials/Material 3.jpg");
+        background-position-y: 5%; 
+        // color: rgb(164, 88, 7);
+        color: rgb(164, 88, 7);
+    }
+    50% {
+        background-image: url("../img/Materials/Material 3.jpg");
+        background-position-y: 5%;
+        color: rgb(164, 88, 7);
+    }
+    55% {
+        background-image: url("../img/Materials/Material 4.jpg");
+        background-position-y: 50%;  
+        color: rgb(187, 118, 126);
+    }
+    75% {
+        background-image: url("../img/Materials/Material 4.jpg");
+        background-position-y: 50%;
+        color: rgb(187, 118, 126);
+    }
+    80% {
+        background-image: url("../img/Materials/Material 1.jpg");
+        background-position-y: 5%;
+        // color: rgb(125, 190, 3);
+        // background-size: auto;
+        color: rgb(125, 190, 3);
+    }
+    100% {
+        background-image: url("../img/Materials/Material 1.jpg");
+        background-position-y: 5%;
+        // color: rgb(125, 190, 3);
+        // background-size: auto;
+        color: rgb(125, 190, 3);
+    }
+
+}
+// @keyframes hello {
+//     0% {
+//         color: rgb(125, 190, 3);
+//     }
+//     5% {
+//         color: rgb(19, 32, 170);
+//     }
+//     25%{
+//         color: rgb(19, 32, 170);
+//     }
+//     30%{
+//         color: rgb(164, 88, 7);
+//     }
+//     50%{
+//         color: rgb(164, 88, 7);
+//     }
+//     55%{
+//         color: rgb(187, 118, 126);
+//     }
+//     75%{
+//         color: rgb(187, 118, 126);
+//     }
+//     80%{
+//         color: rgb(125, 190, 3);
+//     }
+//     100%{
+//         color: rgb(125, 190, 3);
+//     }
+// }
+
+@keyframes background-animation {
+    0% {
+        background-color: rgb(125, 190, 3);
+    }
+    5% {
+        background-color: rgb(85, 94, 202);
+    }
+    25%{
+        background-color: rgb(85, 94, 202);
+    }
+    30%{
+        background-color: rgb(164, 88, 7);
+    }
+    50%{
+        background-color: rgb(164, 88, 7);
+    }
+    55%{
+        background-color: rgb(187, 118, 126);
+    }
+    75%{
+        background-color: rgb(187, 118, 126);
+    }
+    80%{
+        background-color: rgb(125, 190, 3);
+    }
+    100%{
+        background-color: rgb(125, 190, 3);
+    }
+}
+
+@keyframes text-animation {
+    0% {
+        color: rgb(125, 190, 3);
+    }
+    5% {
+        color: rgb(85, 94, 202);
+    }
+    25%{
+        color: rgb(85, 94, 202);
+    }
+    30%{
+        color: rgb(164, 88, 7);
+    }
+    50%{
+        color: rgb(164, 88, 7);
+    }
+    55%{
+        color: rgb(187, 118, 126);
+    }
+    75%{
+        color: rgb(187, 118, 126);
+    }
+    80%{
+        color: rgb(125, 190, 3);
+    }
+    100%{
+        color: rgb(125, 190, 3);
+    }
+}

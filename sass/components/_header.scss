@@ -1,0 +1,77 @@
+.header {
+    animation-name: header-animate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    text-align: center;
+    // --color: black;
+    // --color : red;
+    // color: #577315;
+    background-image: url("../img/Materials/Material 1.jpg");
+    // background-position: center;
+    background-size: cover;
+    background-position-y: 5%;
+    // -webkit-backdrop-filter: saturate(50deg);
+    // background-repeat: no-repeat;
+    height: 90vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    position: relative;
+    &__logo{
+        &--box {
+            position: absolute;
+        }
+        &--icon {
+            width: 8rem;
+        }
+    }
+    &__body {
+        height: 100%;
+        // transform: translateY(-10%);
+        @include flex(50%,true, initial, initial);
+        &--left{
+            height: 100%;
+            // background:  yellowgreen;
+        }
+        &--textbox {
+            // margin-top: -5%; // controls position-y of text
+            padding-top: 10%; 
+            // transform: translateY(-10%);
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            background: rgba($color: #ffffff, $alpha: .8);
+            
+
+        }
+    }
+    &__text{
+        // margin-top: -2rem;
+        &--main{
+            padding: 0 20%;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            font-size: 2.5rem;
+            margin-bottom: 7rem;
+        }
+        &--sub{
+            font-size: 1.5rem;
+            padding: 0 10%;
+            // word-wrap: break-word;
+            text-align: justify;
+            // text-justify: newspaper;
+            text-align-last: center;
+            // text-justify: auto;
+            width: 100%;
+            // font-size: 2.5rem;
+            margin-bottom: 7rem;
+        }
+        &--btn{
+            background-color: #577315;
+            // margin: 0 auto;
+        }
+    }
+}
+

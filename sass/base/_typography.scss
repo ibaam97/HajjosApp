@@ -1,0 +1,39 @@
+.heading--secondary {
+    // color: black;
+    // color: $color-text-dark;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    // -webkit-background-clip: text;
+    // color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    animation-name: text-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+*:hover>.heading--secondary {
+    transform: scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba(black, .2);
+}
+
+.heading--tertiary {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 2rem;
+    text-align: justify;
+    text-align-last: center;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+    &--sub{
+        font-size: 1.5rem;
+    }
+}

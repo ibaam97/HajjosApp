@@ -1,0 +1,50 @@
+.btn {
+    &:link{
+        text-decoration: none;
+    }
+    // text-align: center;
+    background-color: white;
+    z-index: 1;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 auto;
+    // width: fit-content;
+    display: inline-block;
+    font-size: 2.5rem;
+    // background: white;
+    padding: 1.2rem 3rem;
+    border-radius: 1000px;
+    font-weight: 400;
+    color: #777;
+    transition: transform .4s;
+    // border:solid black 1px;
+    &::after{
+        content: "";
+        background-color: inherit;
+        z-index: 2;
+        transition: transform .4s, opacity .4s;
+        // @include center; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 100px;
+    }
+    &:hover{
+        box-shadow: 0 .5rem 1.2rem rgba($color: #000000, $alpha: .4);
+        transform: translateY(-.5rem);
+        &::after{
+            // animation-fill-mode: backwards;
+            transform: scaleX(1.4) scaleY(1.8);
+            opacity: 0;
+        }
+    }
+    &--header{
+        color: white;
+        animation-name: background-animation;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+}

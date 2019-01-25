@@ -1,0 +1,96 @@
+
+
+/* Slideshow container */
+
+/* Hide the images by default */
+.content{
+    &__quote{
+        height: 8rem;
+        display: none;
+        transform: skewY(7deg);
+    }
+    // &__quote1{
+    //     // display: initial;
+    // }
+    &__box {
+        height: 80vh;
+        transform: skewY(-7deg);
+        color: white;
+        animation-name: background-animation;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        margin: 5rem 0;
+        padding: 10rem 20rem;
+        position: relative;
+    }
+    // &__nav {
+    //     transform: translateY(-50%) skewY(7deg);
+    //       cursor: pointer;
+    //         position: absolute;
+    //         top: 50%;
+    //         width: auto;
+    //         // margin-top: -22px;
+    //         padding: 16px;
+    //         color: white;
+    //         font-weight: bold;
+    //         font-size: 18px;
+    //         transition: 0.6s ease;
+    //         border-radius: 0 3px 3px 0;
+    //         user-select: none;
+    // }
+    &__buttons{
+        position: absolute;
+        bottom: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 3rem;
+        transform: skewY(7deg);
+    }
+}
+
+/* Next & previous buttons */
+
+
+/* Position the "next button" to the right */
+// .next {
+//   right: 0;
+//   border-radius: 3px 0 0 3px;
+// }
+
+// .prev {
+//     left: 0;
+// }
+// /* On hover, add a black background color with a little bit see-through */
+// .prev:hover, .next:hover {
+//   background-color: rgba(0,0,0,0.8);
+// }
+
+/* Caption text */
+.content__date {
+display: inline-block;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+//   position: absolute;
+  bottom: 8px;
+//   width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
