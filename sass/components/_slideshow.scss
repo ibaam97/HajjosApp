@@ -4,10 +4,23 @@
 
 /* Hide the images by default */
 .content{
+    &__quotesbox{
+      height: 100%;
+      display: flex;
+      transform: skewY(7deg);
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
     &__quote{
-        height: 8rem;
-        display: none;
-        transform: skewY(7deg);
+      display: flex;
+      align-items: center;
+      border-radius: 1rem;
+      height: 100%;
+      padding: 2rem;
+      background-color: grey;
+      flex-basis: 25%;
+        // height: 8rem;
+        // display: none;
     }
     // &__quote1{
     //     // display: initial;
@@ -20,7 +33,7 @@
         animation-duration: 20s;
         animation-iteration-count: infinite;
         margin: 5rem 0;
-        padding: 10rem 20rem;
+        padding: 10rem 5rem;
         position: relative;
     }
     // &__nav {
@@ -67,7 +80,7 @@
 
 /* Caption text */
 .content__date {
-display: inline-block;
+display: block;
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
