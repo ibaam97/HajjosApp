@@ -110,7 +110,7 @@ body {
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align-last: center; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
@@ -122,6 +122,9 @@ body {
 
 .u-center-text {
   text-align: center; }
+
+.u-overflow {
+  overflow: hidden; }
 
 .header {
   animation-name: header-animate;
@@ -289,13 +292,47 @@ body {
   flex-direction: row; }
 
 .content__quote {
+  transition: all .4s;
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   border-radius: 1rem;
   height: 100%;
+  overflow: hidden;
   padding: 2rem;
-  background-color: grey;
   flex-basis: 25%; }
+  .content__quote--text {
+    transition: all .4s; }
+  .content__quote--main {
+    margin-top: 50%;
+    margin-bottom: 10%; }
+  .content__quote--sub {
+    opacity: 0;
+    transition: all .4s;
+    transform: translateY(-100%); }
+  .content__quote--background {
+    transition: all .4s;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/Blog Headers/3.jpg");
+    background-size: 130%;
+    background-position: center; }
+  .content__quote:hover {
+    box-shadow: 0.5rem 0.8rem 0.8rem rgba(0, 0, 0, 0.4);
+    transform: scale(1.1); }
+    .content__quote:hover .content__quote--text {
+      transform: translateY(-20%); }
+    .content__quote:hover .content__quote--sub {
+      opacity: 1;
+      transform: translateY(0); }
+    .content__quote:hover .content__quote--background {
+      background-size: 110%;
+      filter: blur(2px); }
 
 .content__box {
   height: 80vh;
@@ -320,6 +357,7 @@ body {
 /* Position the "next button" to the right */
 /* Caption text */
 .content__date {
+  margin-top: 10%;
   display: block;
   color: #f2f2f2;
   font-size: 15px;
