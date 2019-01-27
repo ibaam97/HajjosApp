@@ -13,7 +13,10 @@
     }
     &__quote{
       &--text{
-        transition: all .4s;
+        animation: text-animation;
+        animation-duration: 20s;
+        animation-iteration-count: infinite; 
+        transition: transform .4s;
       }
       &--main{
         margin-top: 50%;
@@ -22,8 +25,9 @@
         
       }
       &--sub{
+        font-weight: 700;
         opacity: 0;
-       transition: all .4s;
+       transition: transform .4s;
 
         transform: translateY(-100%);
       }
@@ -60,7 +64,7 @@
         .content__quote--background{
           background-size: 110%;
           // transform: scale(1.0);
-          filter: blur(2px);
+          filter: blur(2px) grayscale(50%) contrast(75%) brightness(.75);
         }
       }
       position: relative;
@@ -140,7 +144,8 @@
 .content__date {
   margin-top: 10%;
   display: block;
-  color: #f2f2f2;
+  font-weight: 700;
+  // color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
 //   position: absolute;

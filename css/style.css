@@ -303,13 +303,17 @@ body {
   padding: 2rem;
   flex-basis: 25%; }
   .content__quote--text {
-    transition: all .4s; }
+    animation: text-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition: transform .4s; }
   .content__quote--main {
     margin-top: 50%;
     margin-bottom: 10%; }
   .content__quote--sub {
+    font-weight: 700;
     opacity: 0;
-    transition: all .4s;
+    transition: transform .4s;
     transform: translateY(-100%); }
   .content__quote--background {
     transition: all .4s;
@@ -332,7 +336,7 @@ body {
       transform: translateY(0); }
     .content__quote:hover .content__quote--background {
       background-size: 110%;
-      filter: blur(2px); }
+      filter: blur(2px) grayscale(50%) contrast(75%) brightness(0.75); }
 
 .content__box {
   height: 80vh;
@@ -359,7 +363,7 @@ body {
 .content__date {
   margin-top: 10%;
   display: block;
-  color: #f2f2f2;
+  font-weight: 700;
   font-size: 15px;
   padding: 8px 12px;
   bottom: 8px;
