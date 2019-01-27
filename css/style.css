@@ -384,6 +384,13 @@ body {
 .active, .dot:hover {
   background-color: #717171; }
 
+.navbar {
+  display: flex;
+  justify-content: space-between; }
+  .navbar__group {
+    justify-content: space-between;
+    display: flex; }
+
 .categories {
   padding: 20rem 0;
   padding-bottom: 25rem;
