@@ -79,7 +79,7 @@
       overflow: hidden;
       padding: 2rem;
       // background-color: grey;
-      flex-basis: 25%;
+      flex-basis: 20%;
       // height: 8rem;
       // display: none;
     }
@@ -87,14 +87,14 @@
       //     // display: initial;
       // }
       &__box {
-        height: 80vh;
+        height: 90vh;
         transform: skewY(-7deg);
         color: white;
         animation-name: background-animation;
         animation-duration: 20s;
         animation-iteration-count: infinite;
         margin: 5rem 0;
-        padding: 10rem 5rem;
+        padding: 13rem 5rem;
         position: relative;
         
       }

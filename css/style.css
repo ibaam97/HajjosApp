@@ -87,6 +87,7 @@ html {
   font-family: 'Montserrat', sans-serif; }
 
 body {
+  position: relative;
   box-sizing: border-box; }
 
 .heading--secondary {
@@ -133,7 +134,8 @@ body {
   animation-fill-mode: backwards;
   text-align: center;
   background-image: url("../img/Materials/Material 1.jpg");
-  background-size: cover;
+  background-size: 103%;
+  background-position-x: center;
   background-position-y: 5%;
   height: 90vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -301,7 +303,7 @@ body {
   height: 100%;
   overflow: hidden;
   padding: 2rem;
-  flex-basis: 25%; }
+  flex-basis: 20%; }
   .content__quote--text {
     animation: text-animation;
     animation-duration: 20s;
@@ -339,14 +341,14 @@ body {
       filter: blur(2px) grayscale(50%) contrast(75%) brightness(0.75); }
 
 .content__box {
-  height: 80vh;
+  height: 90vh;
   transform: skewY(-7deg);
   color: white;
   animation-name: background-animation;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   margin: 5rem 0;
-  padding: 10rem 5rem;
+  padding: 13rem 5rem;
   position: relative; }
 
 .content__buttons {
@@ -385,11 +387,50 @@ body {
   background-color: #717171; }
 
 .navbar {
+  height: 5rem;
+  position: fixed;
+  animation-name: text-animation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  width: 100%;
+  z-index: 100;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between; }
+  align-items: center;
+  padding: 1rem 1.5rem; }
+  .navbar__logo {
+    flex-basis: 10%; }
+    .navbar__logo svg {
+      height: 8rem;
+      background-color: transparent; }
+  .navbar__search {
+    flex-basis: 50%; }
+    .navbar__search input {
+      padding: 1.5rem;
+      border-style: solid;
+      border-width: 1px;
+      height: 2rem;
+      border-radius: 100px;
+      width: 100%; }
   .navbar__group {
+    font-weight: 700;
+    text-align: center;
+    list-style: none;
     justify-content: space-between;
     display: flex; }
+    .navbar__group p {
+      font-size: 1.5rem; }
+    .navbar__group li {
+      width: 30%; }
+    .navbar__group--left {
+      flex-basis: 15%;
+      padding: 0 3%; }
+    .navbar__group--right {
+      padding: 0 3%;
+      flex-basis: 25%; }
 
 .categories {
   padding: 20rem 0;
