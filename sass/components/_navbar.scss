@@ -1,0 +1,79 @@
+.navbar {
+    height: 5rem;
+    // svg {
+    //     height: 1.8rem;
+    //     width: 1.8rem;
+    // }
+    position: fixed;
+    animation-name: text-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    z-index: 100;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #eee;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+
+    &__logo {
+        // height: 100%;
+        // overflow: hidden;
+        // background-image: url("../img/logo 1/icon-left-font.png");
+        // background-color: brown;
+        // background-size: contain;
+        flex-basis: 10%;
+        svg {
+            height: 8rem;
+            // width: 60%;
+            background-color: transparent;
+        }
+        
+    }
+
+    &__search {
+        flex-basis: 50%;
+
+        input {
+            padding: 1.5rem;
+            border-style: solid;
+            border-width: 1px;
+            height: 2rem;
+            border-radius: 100px;
+            width: 100%;
+        }
+    }
+
+    // justify-content: space-between;
+    &__group {
+        font-weight: 700;
+        text-align: center;
+        list-style: none;
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        li {
+            width: 30%;
+        }
+
+        &--left {
+            flex-basis: 15%;
+            padding: 0 3%;
+
+        }
+
+        &--right {
+            padding: 0 3%;
+            flex-basis: 25%;
+        }
+
+        justify-content: space-between;
+        // width: fit-content;
+
+        display: flex;
+    }
+}
